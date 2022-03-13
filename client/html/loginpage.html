@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DASHBOARD</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="text/javascript" src="../js/index.js"></script>
+</head>
+
+<body>
+  <% if(message) { %>
+    <h2>
+      <center>
+        <%= message %>
+      </center>
+    </h2>
+    <a href="/">
+      <center>Return to the Login Page</center>
+    </a>
+    <% }else { %>
+      <h2>
+        <center>Welcome <%= userName%> to express JS Dashboard</center>
+      </h2>
+      <a href="/">
+        <center>Logout</center>
+      </a>
+      <% } %>
+</body>
+
+</html>
