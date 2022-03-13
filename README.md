@@ -3,13 +3,13 @@
 ### Genral Information
 
 ```
-This Repository uses a signup and login journey using ExpressJs and MongoDb
+This Repository implements signup and login journey using ExpressJs and MongoDb
 ```
 
 ### To install packages
 
-```
 Before running the project run below command
+```
 npm i 
 ```
 
@@ -23,13 +23,12 @@ sudo chown -R "$USER" /data/db
 brew services start mongodb
 ```
 
-
-### To check the load testing for concurrent request we are using loadtest
+###Starting server on your machine
 
 ```
-loadtest -n 10 -c 10 http://localhost:3000/first
-loadtest -n 10 -c 10 http://localhost:3000/second
-loadtest -n 10 -c 10 http://localhost:3000/third
-Run these three after starting node fork-demo.js server to see the time each request 
-takes and request per second
+
+Use either of the below commands
+1. nodemon
+2. node .
+
 ```
